@@ -1,15 +1,17 @@
 {
-  "name": "game7",
+  "name": "webhook-fb-bot",
   "version": "1.0.0",
-  "description": "This example is so cool.",
+  "description": "TestBot Server App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
-  "keywords": [
-    "example",
-    "heroku"
-  ],
-  "author": "jane-doe",
-  "license": "MIT"
+  "author": "Adam Jodlowski",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "request": "^2.72.0"
+  }
 }
