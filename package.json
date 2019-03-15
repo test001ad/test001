@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "hahaha"
+    {
     "scripts": {
     "start": "index.js"
 }
