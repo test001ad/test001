@@ -34,6 +34,7 @@ app.get("/bot", function(request, response)
 app.post("/bot", function(request, response)
 {
 	var data = request.body;
+	 console.log('received bot webhook');
 	if (data.object === "page" && data.entry !== undefined)
 	{
 		data.entry.forEach(function(entry)
