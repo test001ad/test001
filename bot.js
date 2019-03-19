@@ -4,6 +4,7 @@ var app = express();
 var bodyParser = require("body-parser");
 var cors = require("cors");
 var redis = require("redis");
+//var messaging = require("./messaging.js");
 
 var red = redis.createClient();
 red.on("error", (err) => {
