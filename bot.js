@@ -165,4 +165,4 @@ function ProcessPlayers() {
     });
 }
 
-setInterval(ProcessPlayers, 1);
+setInterval(ProcessPlayers, 100000);
