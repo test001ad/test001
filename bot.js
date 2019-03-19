@@ -27,7 +27,7 @@ app.listen(app.get("port"), function () {
 
 app.get("/bot", function (request, response) {
     console.log('Bot Get  HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH');
-    if (request.query["hub.verify_token"] === pages.GetVertifyToken()) {
+    if (request.query["hub.mode"] === "subscribe" && request.query["hub.verify_token"] === pages.GetVertifyToken()) {
         response.status(200).send(request.query["hub.challenge"]);
     }
     else {
