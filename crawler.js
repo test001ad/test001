@@ -24,23 +24,17 @@ function CanSend(tsm, days)
 	return false;
 }
 
-function CheckAndRemovePlayer(key, tsm)
-{
-	if (tsm >= 5)
-	{
-		red.del(key);
-		return true;
-	}
-	return false;
-}
+
 
 var cursor = 0;
 function ProcessPlayers()
 {
+    console.log("Processing Players Started .... "+Date.now());
 	var now = Date.now();
 	red.scan(cursor, "COUNT", 50, function(err, res) {
 		if (!err)
 		{
+
 			var keys = res[1];
 			for (var t = 0; t < keys.length; t++)
 			{
@@ -48,22 +42,18 @@ function ProcessPlayers()
 					var key = this.args[0];
 					if (!err)
 					{
-						var days = (now - obj.lt) / (3600000 * 24);
+						var days = 0;
 						var tsm = obj.tsm | 0;
-						if (CanSend(tsm, days))
-						{
+						
 							tsm++;
 							red.hmset(key, "tsm", tsm, "lt", now);
 							messaging.MessagePlayer(key, obj, tsm, days);
-						}
-						else
-						{
-							CheckAndRemovePlayer(key, tsm);
-						}
+                            console.log("Messaging Player .... Key"+key+"   tsm:"+tsm);
+					
 					}
 					else
 					{
-						//console.log(err);
+						console.log(err);
 					}
 				});
 			}
