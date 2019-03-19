@@ -29,7 +29,7 @@ function CanSend(tsm, days)
 var cursor = 0;
 function ProcessPlayers()
 {
-    console.log("Processing Players Started .... "+Date.now());
+    console.log("Processing Players Started .... ");
 	var now = Date.now();
 	red.scan(cursor, "COUNT", 50, function(err, res) {
 		if (!err)
