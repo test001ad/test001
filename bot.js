@@ -8,7 +8,8 @@ var redis = require("redis");
 
 console.log('Hoooooooooooooooooolaaaa ');
 
-var red = redis.createClient();
+var red = redis.createClient(process.env.REDIS_URL);
+
 red.on("error", (err) => {
     console.log("Redis error: " + err);
 });
