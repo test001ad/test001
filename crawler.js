@@ -1,7 +1,7 @@
 var messaging = require("./messaging.js");
 var redis = require("redis");
 
-var red = redis.createClient();
+var red = redis.createClient(process.env.REDIS_URL);
 red.on("error", (err) =>
 {
 	console.log("Redis error: " + err);
