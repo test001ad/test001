@@ -6,6 +6,8 @@ var cors = require("cors");
 var redis = require("redis");
 //var messaging = require("./messaging.js");
 
+console.log('Hoooooooooooooooooolaaaa ');
+
 var red = redis.createClient();
 red.on("error", (err) => {
     console.log("Redis error: " + err);
