@@ -16,9 +16,12 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.listen(app.get("port"), function () {
+
+    console.log('Listen GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG');
 });
 
 app.get("/bot", function (request, response) {
+    console.log('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH');
     if (request.query["hub.verify_token"] === pages.GetVertifyToken()) {
         response.status(200).send(request.query["hub.challenge"]);
     }
