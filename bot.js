@@ -172,8 +172,8 @@ function AddPlayer(sender_id, player_id, context_id, game) {
 
 
 var SendRegularity = [
-	1,	// Day 1
-	1,	// Day 2
+	0,	// Day 1
+	0,	// Day 2
 	2,	// Day 4
 	2,	// Day 6
 	1,	// Day 7
