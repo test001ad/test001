@@ -216,7 +216,9 @@ function ProcessPlayers()
                     {
                         console.log(" Final Before Messaging.... " + Date.now());
 						var days = (now - obj.lt) / (3600000 * 24);
-						var tsm = obj.tsm | 0;
+                        var tsm = obj.tsm | 0;
+
+                        console.log("Before Messaging =>>>>>>>>>>>>>>>> Days : " + days + " TSM : " + tsm)
 						if (CanSend(tsm, days))
 						{
 							tsm++;
@@ -225,7 +227,8 @@ function ProcessPlayers()
                             console.log("Messaging Player End  .... Key" + key + "   tsm:" + tsm);
 						}
 						else
-						{
+                        {
+                            console.log(" msaa7 Lakhraaaaaaaaaaaaaa  .... " + Date.now());
 							CheckAndRemovePlayer(key, tsm);
 						}
 					}
