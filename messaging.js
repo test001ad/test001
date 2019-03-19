@@ -10,6 +10,7 @@ var request = require("request");
 // 
 function BuildAndSendMessage(sender_id, context_id, page)
 {
+    console.log(" Function : BuildAndSendMessage  ");
 	var button =
 	{
 		type: "game_play",
@@ -50,6 +51,7 @@ function BuildAndSendMessage(sender_id, context_id, page)
 
 function CallSendAPI(messageData, pat)
 {
+    console.log(" Function : CallSendAPI  ");
 	var graphApiUrl = "https://graph.facebook.com/me/messages?access_token=" + pat;
 	request({
 		url: graphApiUrl,
@@ -58,18 +60,21 @@ function CallSendAPI(messageData, pat)
 		body: messageData
 	}, function (error, response, body){
 		console.log("send api returned", "error", error, "status code", response.statusCode, "body", body);
-	});
+        });
+
 }
 
 function MessagePlayer(key, obj, tsm, days)
 {
+    console.log(" MessagePlayer :   ");
 	var prms = key.split(":");
 	var game_index = prms[0] | 0;
 	var player_id = prms[1];
 
-	//console.log("Sending message to " + game_index + " - " + player_id + ", tsm = " + tsm + ", days = " + days);
+	console.log("Sending message to " + game_index + " - " + player_id + ", tsm = " + tsm + ", days = " + days);
 
-	BuildAndSendMessage(obj.pid, obj.cid, pages.GetPage(game_index));	
+    BuildAndSendMessage(obj.pid, obj.cid, pages.GetPage(game_index));	
+    
 }
 
 module.exports = 
