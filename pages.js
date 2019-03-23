@@ -11,7 +11,18 @@ var PAGES = [
 		imageurl: "http://cdn.akamai.steamstatic.com/steam/apps/771710/ss_9c45538e93098a30e6974480a4d83323c2f0e236.jpg",
 		payload: null,
 		pat: "EAAEyFHJtNI8BAK6CO314NhIemddClVzGuOgG6a3QBAqhh57EAKwdibXHVhnKKesvn0n0MJ4ovwPIBo7ZA8PwNbnQcTTcZCthmLZC5xdkPHbjNN08SHrpZAwm3rvnotISZBeDWAH8UqWecOiz5VCnxJAJdXxr0kWHOmLJdLVsxuH6UXX0uEyQz",
-	},
+    },
+    {
+        id: "362604421247208",
+        name: "Candy Crush",
+        key: "1",
+        title: "It's a brand new day, let's continue our adventure!",
+        subtitle: "Your Friends are playing...",
+        cta: "Play Now",
+        imageurl: "https://pmcvariety.files.wordpress.com/2018/08/candy-crush-saga.jpg?w=1000&h=563&crop=1",
+        payload: null,
+        pat: "EAAFJyWu48OgBANfDayysNZC0WOu6UZCACZAVkZApEK3CSUnRBN5Fw5EZAFVLtqbCjzfuLUuKOpYvhBgV1Q8JlER0JRusYrK2EWTjMJ1ZBO7C2bqoLNbMZAZAwImwxYttaODmas2MeobnWCRr1u6RrtsLJLXV8qQuPmZCk2Q2fmZCbNOH1vruo5fXH5",
+    }
 ];
 
 function GetGame(page_id)

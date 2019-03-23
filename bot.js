@@ -206,7 +206,7 @@ function ProcessPlayers()
 	red.scan(cursor, "COUNT", 50, function(err, res) {
 		if (!err)
         {
-            console.log(" Inside Scan   .... " + Date.now());
+            
 			var keys = res[1];
 			for (var t = 0; t < keys.length; t++)
 			{
@@ -214,7 +214,7 @@ function ProcessPlayers()
 					var key = this.args[0];
 					if (!err)
                     {
-                        console.log(" Final Before Messaging.... " + Date.now());
+                       
 						var days = (now - obj.lt) / (3600000 * 24);
                         var tsm = obj.tsm | 0;
 
@@ -228,7 +228,7 @@ function ProcessPlayers()
 						}
 						else
                         {
-                            console.log(" msaa7 Lakhraaaaaaaaaaaaaa  .... " + Date.now());
+                           
 							CheckAndRemovePlayer(key, tsm);
 						}
 					}
