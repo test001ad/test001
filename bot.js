@@ -85,7 +85,7 @@ function HandleGameplay(event, game) {
 
 function AddPlayer(sender_id, player_id, context_id, game) {
 
-    console.log('++++++++++++++++++++++++++++++++++++++++++ key:' + key);
+    
     console.log('sender id:' + sender_id + '  Player id :' + player_id + '   Game:' + game.key);
     var now = Date.now();
     var key = game.key + ":" + player_id;
