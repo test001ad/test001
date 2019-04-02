@@ -86,7 +86,8 @@ function HandleGameplay(event, game) {
 function AddPlayer(sender_id, player_id, context_id, game) {
     var now = Date.now();
     var key = game.key + ":" + player_id;
-
+    console.log('++++++++++++++++++++++++++++++++++++++++++ key:' + key);
+    console.log('sender id:' + sender_id + '  Player id :' + player_id + '   Game:' + game.key);
     red.exists(key, function (err, exists) {
         if (!exists) {
             console.log("  Adding the Player to  Redis... ");
