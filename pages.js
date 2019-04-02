@@ -13,7 +13,7 @@ var PAGES = [
 		pat: "EAAEyFHJtNI8BAK6CO314NhIemddClVzGuOgG6a3QBAqhh57EAKwdibXHVhnKKesvn0n0MJ4ovwPIBo7ZA8PwNbnQcTTcZCthmLZC5xdkPHbjNN08SHrpZAwm3rvnotISZBeDWAH8UqWecOiz5VCnxJAJdXxr0kWHOmLJdLVsxuH6UXX0uEyQz",
     },
     {
-        id: "362604421247208",
+        id: "2203277176590538",
         name: "Candy Crush",
         key: "1",
         title: "It's a brand new day, let's continue our adventure!",
