@@ -21,7 +21,7 @@ var PAGES = [
         cta: "Play Now",
         imageurl: "https://pmcvariety.files.wordpress.com/2018/08/candy-crush-saga.jpg?w=1000&h=563&crop=1",
         payload: null,
-        pat: "EAAfT3nFz0MoBANeyBVe5sMsSHKn4ncYZAUNxD9cUzBknAnDdky6F1rPohT2wJkgTouFsvoTGganKk5UOU3ZAOluKLBdJ0ku1tlqGYkVnN0HtuHEpTukFnROQr54JIGlmoNCSLPikMVkYFp55jC60nGIg1TOZBUrf9EImEp4SWMzjjpGGnuy",
+        pat: "EAAfT3nFz0MoBAJaBX9vN95xVA3ZCGwZBWUbJ1IvWlRqL4ywAfEGkIfsPJo9dO50xyicapEFEZAj1ZAkOE7yWGs8VFrZBZBTYHzcPYh83sunLRZAzLUs0NFSqySNoDIoR2FaruMd4wP4yxvS69X8kXQceAJrXQmsaM5CCaXKPW2TPpBUyYuLeR1U",
     }
 ];
 
