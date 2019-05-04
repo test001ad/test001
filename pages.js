@@ -2,7 +2,7 @@ var VERIFY_TOKEN = "mygame";
 var PAGES = [
 	// Add your pages here, change key for each one, I use numberical values starting at 0
     {
-        id: "2203277176590538",
+        id: "2088160064816027",
         name: "Candy Crush",
         key: "0",
         title: "It's a brand new day, let's continue our adventure!",
