@@ -25,7 +25,7 @@ var PAGES = [
     }, {
         id: "329459777693439",
         name: "Toy Blast",
-        key: "1",
+        key: "2",
         title: "Don't forget your daily free coins",
         subtitle: "We miss you, come back and play",
         cta: "Play Now",
