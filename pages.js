@@ -31,7 +31,7 @@ var PAGES = [
         cta: "Play Now",
         imageurl: "https://i.imgur.com/SETRPcn.png",
         payload: null,
-        pat: "EAAeZB84SlSooBAJp8ZBvlxi65AjRzDH79ZBIZBIKEb9VW54OiNUqgNuDZBhsubZBf2HiiTeTWAoQsXeDaeWKegPpQSPrBcpZAgebggd36ASlzFc12ZBPN5Lu5A6aExCPxhCABQgd8PlJrg5sq7VDaImn33E2y7uDk5xZBcqnoRG89ZAKCoqt5uCLPk",
+        pat: "EAAeZB84SlSooBANL354CN4dEQZBERbKZCraUQFlXQ8X7ZCND3ntKxZA8fqSfyAuGDG9yf8uLhZCsSVZAyc2ZA8o9FZCzAY9cCR3MZAUqbMpvuZCwCQ2SyQAqg6gkSjhXsBHsZA4ZBDjEZAJFnqK43qK3ZBvxxgMGLmDLf5xboehna1wpLcGnDDTLhJOqZBZALQnHascfXNzcZD",
     }
 
 
